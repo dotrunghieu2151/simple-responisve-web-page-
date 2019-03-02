@@ -1,0 +1,274 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    line-height:1.5;
+}
+a {
+    text-decoration:none;
+    color:#999999;
+}
+.container {
+    width:100%;
+}
+.header{
+    width:100%;
+    height:500px;
+    border-top: 10px solid #999999;
+    background:url('img/banner.png') no-repeat center;
+    background-size:cover;
+    background-attachment:fixed;
+    position:relative; 
+}
+.headerText{
+    color:white;
+    position:absolute;
+    width:30%;
+    left:15%;
+    top:20%;
+}
+@font-face {
+    font-family:"myFont";
+    src:url('font/Allura-Regular.otf');
+}
+.headerText h1 {
+    font-size:50px;
+    font-family:myFont;
+}
+.headerText p {
+    font-size:18px;
+}
+button {
+    border-radius:100%;
+    color:white;
+    outline:none;
+    border:none;
+    cursor:pointer;
+}
+.headerText button {
+    background:black;
+    opacity:0.4;
+    width:20%;
+    max-width:70px;
+    height:50px;
+    font-size:25px;
+    margin-right:12px;
+}
+button:focus,  button:hover {
+    background:#009933;
+    opacity:1;
+}
+.content1{
+    width:90%;
+    margin:50px auto 0 auto;
+}
+.content1 .insideContent {
+    text-align:center;
+    width:33%;
+    float:left;
+    padding-right:20px;
+    box-sizing:border-box;
+    
+}
+.insideContent h3 {
+    font-size: 30px;
+    margin-top:20px;
+}
+.insideContent h4 {
+    font-size:12px;
+    color:#999999;
+    margin-top:-20px;
+}
+.icons {
+    border-radius:100%;
+    background-color:#009933;
+    color:white;
+    width:35%;
+    max-width:100px;
+    min-width:100px;
+    height:100px;
+    font-size:50px;
+    outline:none;
+    border:none;
+}
+.clearDiv {
+    clear:both;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+.content2{
+
+    width:100%;
+    margin-top:50px;
+    background-color:#E0E1E1;
+    height:400px;;
+    overflow:hidden;
+}
+.content2Text {
+ width:30%;
+ float:left;
+ margin-left:10%;
+ margin-top:20px;
+}
+.content2Text h4 {
+    font-family:myFont;
+    font-size:20px;
+    margin-top:-10px;
+}
+.content2Video{
+    float:right;
+    width:auto;
+    margin-right:5%;
+    box-sizing:border-box;
+    margin-top:50px;
+}
+.content2Text form input[type="email"] {
+    border-radius: 10px 0 0 10px;
+    outline:none;
+    border:none;
+    padding:10px;
+    width:60%;
+    max-width:200px;
+}
+.content2Text form input[type="submit"]{
+    padding:10px;
+    border-radius: 0 10px 10px 0;
+    border:none;
+    background:#00cc33;
+    color:white;
+    width:20%;
+    margin-left:-5px;
+    max-width:100px;
+}
+.content3{
+    text-align:center;
+}
+.content3 p {
+    width:50%;
+    margin: 40px auto 0 auto;
+}
+.content3 img {
+    height:100px;
+    width:100px;
+}
+.slideImg {
+    width:1050px;
+    margin:auto;
+}
+.content3 h3 {
+    margin-top:30px;
+}
+.content3Btn {
+    margin-top:15px;
+}
+.content3Btn button {
+    height:3em;
+    width:3em;
+    font-size:15px;
+    margin-left:10px;
+}
+footer {
+    margin-top:20px;
+    padding:15px;
+    text-align:center;
+    background:#E0E1E1;
+    height:auto;
+}
+footer a {
+    display:inline-block;
+    margin:60px 15px;
+}
+@media only screen and (min-width:2000px) {
+    .content2Video {
+        margin-right:13%;
+    }
+    
+}
+@media only screen and (max-width:1280px) {
+ .slideImg {
+    width:1020px;
+    margin:auto;
+}
+.content2Video{
+  margin-top:20px;
+}
+.content2Text {
+ width:36%;
+ margin-left:10%;
+ margin-top:0px;
+}
+}
+@media only screen and (max-width:1024px){
+.content2Text {
+ width:80%;
+ margin-left:10%;
+ margin-top:10px;
+ 
+}
+.content2Text input[type="email"] {
+    margin-left:27%;  
+    margin-bottom:20px;
+}
+.content2 {
+    height:550px;
+}
+.content2Video {
+    float:none;
+    margin-left:25%;
+}
+.slideImg {
+    width:auto;
+}
+}
+@media only screen and (max-width:768px){
+    .content1 .insideContent {
+        float:none;
+        width:100%;
+        margin-bottom:50px;
+    }
+    .icons {
+        width:30%;
+        max-width:none;
+    }
+    .content2 {
+        height:620px;
+    }
+    .content2Video {
+      margin-left:20%;
+      margin-right:20%;
+}
+}
+@media only screen and (max-width:630px){
+    iframe {
+        width:100%;
+    }
+    .content2Video {
+        margin:auto;
+    }
+    .content2Text input[type="email"]{
+        margin-left:auto;
+    }
+    footer {
+       padding-left:100px;
+       padding-right:100px;
+    }
+}
+@media only screen and (max-width:480px) {
+    .headerText {
+        width:100%;
+        text-align:center;
+        left:0;
+    }
+    .BtnList {
+        width:100%;
+        margin-left:25%;
+        margin-top:15%;
+    }
+    .BtnList button {
+       width:30%;
+       float:left;  
+ 
+    }
+}
